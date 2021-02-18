@@ -4,6 +4,6 @@ variable "prefix" {
 }
 
 variable "location" {
-  default     = "Cenral Us"
+  default     = "Central Us"
   description = "The Azure location where all resources in this example should be created"
 }
