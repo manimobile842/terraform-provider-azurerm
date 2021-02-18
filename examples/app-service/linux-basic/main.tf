@@ -3,12 +3,12 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "main" {
-  name     = "rgterraform"
+  name     = "rgterraform1"
   location = var.location
 }
 
 resource "azurerm_app_service_plan" "main" {
-  name                = "terraformaspserviceplan"
+  name                = "terraformaspserviceplan12"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
   kind                = "Linux"
@@ -21,7 +21,7 @@ resource "azurerm_app_service_plan" "main" {
 }
 
 resource "azurerm_app_service" "main" {
-  name                = "terraformappservice"
+  name                = "terraformappservice12"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
   app_service_plan_id = azurerm_app_service_plan.main.id
