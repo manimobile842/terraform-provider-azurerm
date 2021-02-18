@@ -1,7 +1,9 @@
 variable "prefix" {
-  description = "trf-mani"
+  description = "prefix"
+  default = "The prefix used for all resources in this example"
 }
 
 variable "location" {
-  description = "Central US"
+  default     = "Cenral Us"
+  description = "The Azure location where all resources in this example should be created"
 }
